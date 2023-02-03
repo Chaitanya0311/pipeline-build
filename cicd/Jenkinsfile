@@ -1,8 +1,5 @@
 pipeline {
-    agent {label 'slavenode'}
-    environment{
-        PATH= "/home/chaitanya/maven/bin:$PATH"
-    }
+    agent any
     stages {
         stage('Hello') {
             steps {
