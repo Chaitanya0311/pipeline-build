@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-               git branch: 'main', url: 'https://github.com/Chaitanya0311/pipeline-build.git'
+               git 'https://github.com/Chaitanya0311/docker-hello-world-spring-boot.git'
             }
         }
         stage('Build') {
