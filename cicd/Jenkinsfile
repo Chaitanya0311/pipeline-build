@@ -1,1 +1,13 @@
-
+pipeline {
+    agent {label 'slavenode'}
+    environment{
+        PATH= "/home/chaitanya/maven/bin:$PATH"
+    }
+    stages {
+        stage('Hello') {
+            steps {
+                git 'https://github.com/Chaitanya0311/docker-hello-world-spring-boot.git'
+            }
+        }
+    }
+}
